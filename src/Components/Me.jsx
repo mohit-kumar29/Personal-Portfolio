@@ -29,7 +29,7 @@ const Me = () => {
                 {/* RIGHT side content-image */}
                 <div className='md:1/2 flex justify-center'>
                     <div className='relative w-64 h-64 md:w-80 md:h-80'> 
-                        <div className='absolute inset-0 rounded-full bg-gradient-to-r from-purple to-pink animate-lus-slow opacity-70'>
+                        <div className='absolute inset-0 rounded-full bg-gradient-to-r from-purple to-blue animate-lus-slow opacity-70'>
                             <motion.img 
                             animate={{y: [0, -20, 0] }}
                             transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
@@ -45,6 +45,7 @@ const Me = () => {
 
 
 export default Me
+
 
 
 
