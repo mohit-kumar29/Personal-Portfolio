@@ -14,14 +14,15 @@
   overflow: hidden;
   border-right: 0.15em solid #8B5CF6;
   white-space: nowrap;
-  animation: typing 3.5s steps(250, end) forwards, blink-caret 1s step-end 6;
+  animation: typing 3s steps(250, end) forwards, blink-caret 1s step-end 20;
 }
 @keyframes typing {
   from { width: 0 }
-  to { width: 14ch }  /*adjust to your text length*/
+  to { width: 12.6ch }  /*adjust to your text length*/
 }
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: #8B5CF6; }
+
 }
