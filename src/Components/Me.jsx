@@ -5,20 +5,20 @@ import {assets} from '../assets/assets'
 const Me = () => {
     return (
         <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ opacity: 0, transform: "translateY(40px)" }}
+            animate={{ opacity: 1, transform: "translateY(0px)" }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.1 }}
             viewport={{ once: true }}
             id='home'
-            className='min-h-screen flex items-center pt-20 bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a]'
+            className='min-h-[100svh] flex items-center bg-gradient-to-r from-[#1a1a1a] via-[#2d2d2d] to-[#1a1a1a] scroll-mt-20'
         >
-            <div className='container mx-auto px-6 flex flex-col md:flex-row items-center justify-between'>
+            <div className='container mx-auto px-6 flex flex-col md:flex-row items-center justify-between min-h-screen'>
                 {/* left side  */}
                 <div className='md:w-1/2 mb-10 md:mb-0'>
                     <h1 className='text-4xx md:text-6xl font-bold mb-4'>
                         Hello, I'm <span className='text-purple'>Mohit Kumar</span> <br />
                     </h1>
-                    <h2 className='text-2xl md:text-4xl font-semibold mb-6 typewriter h-13'>a Technologist</h2>
+                    <h2 className='text-xl sm:text-2xl md:text-4xl font-semibold mb-6 typewriter h-8 sm:h-10 md:h-12'>a Technologist</h2>
                     <p className='text-lg text-grey-300 mb-8'>Bringing ideas to life through elegant design and robust engineering.</p>
                     <div className='flex space-x-4 py-3'>
                         <a href="#projects" className='px-6 py-3 bg-purple rounded-lg font-medium hover:bg-purple-700 transition duration-300'> View Work</a>
@@ -45,6 +45,7 @@ const Me = () => {
 
 
 export default Me
+
 
 
 
