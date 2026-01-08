@@ -76,7 +76,7 @@ export const skills = [
   }
 ];
 
-
+// Project Section
 
 export const projects = [
   
@@ -117,6 +117,8 @@ export const projects = [
     icons: [FaReact, FaNodeJs, FaDatabase , FaStripe],
     demo: "#",
     code: "#",
+    liveLink: "https://real-estate-website-beryl-nine.vercel.app/",
+    githubLink: "https://github.com/mohit-kumar29/RealEstate_website",
   },
   {
     title: "Portfolio Website",
@@ -165,3 +167,4 @@ export const experienceData = [
     color: "blue"
   }
 ];
+
